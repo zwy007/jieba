@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@import "public";
+@import "common";
+
+html,body{
+  height: 100%;
+}
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+//header start.....................................
+header{
+  background: white;
+  border-bottom: 2px solid #e7e7e7;
+}
+header .search{
+  background: #f3f3f3;
+}
+header .search a{
+  background: #f3f3f3;
+  color: #a4a4b0;
+  align-items: center;
+}
+header .left i,header .search i,header .gwc i{
+  font-size: .15rem;
+  color: #a4a4b0;
+}
+//header end.....................................
+
+
+#main{
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+//section start.............................................
+section{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+//aside
+section aside{
+  width: .76rem;
+  height: 100%;
+  background: white;
+  border-right: 2px solid #e7e8ea;
+  overflow-y: auto;
+}
+section aside::-webkit-scrollbar{
+  display: none;
+}
+section aside a{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: .17rem 0 .34rem;
+  line-height: .17rem;
+  text-align: center;
+  font-size: .15rem;
+  color: #7c8081;
+}
+section aside a:last-child{
+  margin-bottom: .17rem;
+}
+section aside #fl_list_on{
+  border-left: 3px solid #3a9cff;
+  color: #3a9cff;
+}
+
+//article
+section article{
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+section article::-webkit-scrollbar{
+  display: none;
+}
+section article .main{
+  padding: .16rem .15rem .16rem .15rem;
+  display: none;
+}
+section article .main:first-child{
+  display: block;
+}
+section article .main .main_flag_img{
+  width: 100%;
+  height: 1.07rem;
+  background: url("../img/fl_ly.jpg");
+  background-size: 100% 100%;
+  border-radius: .03rem;
+}
+section article .main .lycx{
+  width: 100%;
+}
+section article .main .lycx p{
+  font-size: .13rem;
+  color: #8a929d;
+  line-height: .46rem;
+}
+section article .main .lycx ul{
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #4e5462;
+}
+section article .main .lycx:last-child ul{
+  border: none;
+}
+section article .main .lycx ul li{
+  width: .6rem;
+  height: .71rem;
+  float: left;
+  margin-bottom: .25rem;
+  margin-right: .63rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section article .main .lycx ul li:nth-child(3n){
+  margin-right: 0rem;
+}
+section article .main .lycx ul li img{
+  width: .51rem;
+  height: .51rem;
+}
+section article .main .lycx ul li span{
+  font-size: .11rem;
+  color: #778085;
+}
+//section end.............................................
+
+
+footer{
+  border-top: 2px solid #e7e7e7;
+}

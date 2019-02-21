@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lk.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+    <!--header start...........................-->
+    <header>乐卡</header>
+    <!--header end...........................-->
+
+    <div id="main">
+        <!--slide start.....................................-->
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li> <li></li> <li></li> <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/lk_banner_01.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/lk_banner_02.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/lk_banner_03.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/lk_banner_04.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="log_reg">登录 / 注册</p>
+        </div>
+        <!--slide end.....................................-->
+
+
+
+        <!--newperson start...........................-->
+        <div id="newperson"></div>
+        <!--newperson end...........................-->
+
+
+        <!--lk_server start............................-->
+        <div id="lk_server">
+            <p class="lk_server_tit">乐卡服务</p>
+            <div class="lk_server_con">
+                <div class="lk_server_list">
+                    <img src="img/lk_server_01.png">
+                    <h3>取现</h3>
+                    <p>小额借款<br />期数灵活</p>
+                </div>
+                <div class="lk_server_list">
+                    <img src="img/lk_server_02.png">
+                    <h3>乐花借款</h3>
+                    <p>高额低息<br />还款灵活</p>
+                </div>
+                <div class="lk_server_list">
+                    <img src="img/lk_server_03.png">
+                    <h3>乐还款</h3>
+                    <p>还信用卡<br />实惠靠谱</p>
+                </div>
+            </div>
+        </div>
+        <!--lk_server end............................-->
+
+
+
+        <!--lk_tq start..................................-->
+        <div id="lk_tq">
+            <div class="lk_tq_tit">
+                <span>乐卡特权</span>
+                <p>
+                    <em>我的卡券</em>
+                    <i class="iconfont icon-youjiantou"></i>
+                </p>
+            </div>
+            <div class="lk_tq_flag_img"></div>
+            <div class="lk_tq_con">
+                <div class="lk_tq_list">
+                    <img src="img/lk_tq_01.png">
+                    <p>高铁贵宾</p>
+                </div>
+                <div class="lk_tq_list">
+                    <img src="img/lk_tq_02.png">
+                    <p>租车优惠</p>
+                </div>
+                <div class="lk_tq_list">
+                    <img src="img/lk_tq_03.png">
+                    <p>酒店折扣</p>
+                </div>
+                <div class="lk_tq_list">
+                    <img src="img/lk_tq_04.png">
+                    <p>电影特惠</p>
+                </div>
+                <div class="lk_tq_list">
+                    <img src="img/lk_tq_05.png">
+                    <p>会员福利</p>
+                </div>
+                <div class="lk_tq_list">
+                    <img src="img/lk_tq_06.png">
+                    <p>手机维修</p>
+                </div>
+            </div>
+        </div>
+        <!--lk_tq end..................................-->
+
+
+
+        <!--lk_jk start.................................-->
+        <div id="lk_jk">
+            <!--<div class="lk_jk_flag_img"></div>-->
+        </div>
+        <!--lk_jk end.................................-->
+
+    </div>
+
+
+    <!--footer start.........................................-->
+    <footer>
+        <a class="foot_list" href="index.html">
+            <i class="iconfont icon-shangcheng"></i>
+            <span>首页</span>
+        </a>
+        <a class="foot_list" href="fl.html">
+            <i class="iconfont icon-sort"></i>
+            <span>分类</span>
+        </a>
+        <a class="foot_list" id="foot_on" href="lk.html">
+            <i class="iconfont icon-qia01"></i>
+            <span>乐卡</span>
+        </a>
+        <a class="foot_list" href="xyk.html">
+            <i class="iconfont icon-xinyongqia"></i>
+            <span>信用卡</span>
+        </a>
+        <a class="foot_list" href="me.html">
+            <i class="iconfont icon-wode"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+    <!--footer end...........................................-->
+</body>
+</html>
+<script>
+    //	轮播图
+    jQuery(".slideBox").slide({
+        mainCell: ".bd ul",
+        autoPlay: true,
+        effect:'left'
+    });
+</script>

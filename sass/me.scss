@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+@import "public";
+
+html,body{
+  height: 100%;
+}
+body {
+  width: 100%;
+  background: #f5f7f6;
+  display: flex;
+  flex-direction: column;
+}
+
+
+//header start............................................
+header{
+  width: 100%;
+  height: 2.5rem;
+  background: pink;
+  margin-bottom: .08rem;
+  position: relative;
+}
+header #header_top{
+  padding: 0 .12rem;
+  height: .5rem;
+  background: url("../img/top_hd.png");
+}
+header #header_top .setting{
+  width: .6rem;
+  height: .5rem;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #header_top .setting span{
+  font-size: .15rem;
+  color: white;
+}
+header #header_top .setting i{
+  font-size: .18rem;
+  color: white;
+}
+header #header_con{
+  padding: 0 .12rem;
+  height: 2rem;
+  background: url("../img/top_bd.png");
+  overflow: hidden;
+}
+header #header_con .status{
+  width: 100%;
+  height: .6rem;
+  margin-top: .35rem;
+  display: flex;
+  justify-content: space-between;
+}
+header #header_con .status .status_left{
+  width: 50%;
+  height: 100%;
+}
+header #header_con .status .status_left{
+  display: flex;
+  align-items: center;
+  font-size: .15rem;
+  color: white;
+}
+header #header_con .status .status_left img{
+  width: .6rem;
+  height: .6rem;
+  margin-right: .08rem;
+}
+header #header_con .status .status_left a{
+  color: white;
+}
+header #header_con .status .status_right{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: .15rem;
+  color: white;
+}
+header #header_con .status .status_right i{
+  font-size: .18rem;
+}
+
+header #header_bot{
+  width: 100%;
+  height: .6rem;
+  background: rgba(255,255,255,.2);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+header #header_bot li,header #header_bot li a{
+  display: block;
+  float: left;
+  width: 49.5%;
+  height: .6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #header_bot li:nth-child(2){
+  width: 1%;
+  background: url("../img/line.png");
+}
+header #header_bot li p,header #header_bot li span{
+  font-size: .15rem;
+  color: white;
+}
+
+//header end............................................
+
+
+#main{
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+//friend start.................................
+#friend{
+  padding:0  .13rem;
+  height: .71rem;
+  background: white;
+  margin-bottom: .08rem;
+  border-top: 1px solid #eaeaec;
+  border-bottom: 1px solid #eaeaec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#friend .fri_left{
+  width: 1.33rem;
+  height: .4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#friend .fri_left .fri_img,#friend .fri_left .fri_img img{
+  width: .4rem;
+  height: .4rem;
+}
+#friend .fri_left .fri_word{
+  width: .77rem;
+  height: .4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#friend .fri_left .fri_word h4{
+  font-size: .13rem;
+  color: #50545f;
+}
+#friend .fri_left .fri_word p{
+  font-size: .12rem;
+  color: #c4c4ce;
+}
+#friend .fri_right{
+  width: .74rem;
+  height: .4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#friend .fri_right a{
+  font-size: .13rem;
+  color: #4d95cf;
+}
+#friend .fri_right i{
+  font-size: .18rem;
+  color: #b5b5b5;
+}
+//friend end.................................
+
+
+
+section{
+  width: 100%;
+  background: white;
+  margin-bottom: .08rem;
+  border-top: 1px solid #eaeaec;
+  border-bottom: 1px solid #eaeaec;
+}
+section .section_list{
+  padding-left: .16rem;
+  height: .4rem;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .section_list:last-child{
+  border-bottom: none;
+}
+section .section_list p{
+  font-size: .13rem;
+  color: #3b3f4b;
+}
+section .section_list i{
+  font-size: .18rem;
+  color: #b8b8b8;
+  margin-right: .16rem;
+}
+
+
+
+
+
+
+
+//footer start..................................
+footer {
+  width: 100%;
+  height: .51rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #e0e0e0;
+}
+
+footer .foot_list {
+  display: block;
+  width: .37rem;
+  height: .37rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .09rem;
+  color: #c4c5c7;
+}
+
+footer .foot_list i {
+  font-size: .21rem;
+  color: #848fa1;
+}
+
+footer #foot_on {
+  color: #3d9aff;
+}
+
+footer #foot_on i {
+  color: #3d9aff;
+}
+
+//footer end...............................

@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+@import "public";
+
+html,body{
+  height: 100%;
+}
+body{
+  width: 100%;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+
+//header start........................................
+header{
+  width: 100%;
+  height: .48rem;
+  background: #fdfcfc;
+  text-align: center;
+  line-height: .48rem;
+  font-size: .15rem;
+  color: #3f424b;
+}
+//header end........................................
+
+
+#main{
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+//slide satrt.......................
+.slideBox {
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  position: relative;
+  background: red;
+  margin-bottom: .08rem;
+}
+.slideBox .hd {
+  height: .06rem;
+  overflow: hidden;
+  position: absolute;
+  margin-left: -.2rem;
+  left: 50%;
+  bottom: .75rem;
+  z-index: 1;
+}
+.slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+}
+.slideBox .hd ul li {
+  float: left;
+  margin-right: 4px;
+  width: .06rem;
+  height: .06rem;
+  line-height: .06rem;
+  text-align: center;
+  background: #cdcdcd;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.slideBox .hd ul li.on {
+  background: #989898;
+}
+.slideBox .bd {
+  position: relative;
+  height: 3rem;
+  z-index: 0;
+}
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle;
+}
+.slideBox .bd img {
+  width: 100%;
+  height: 3rem;
+  display: block;
+}
+.slideBox .log_reg{
+  width: 90%;
+  height: .5rem;
+  background: #43a0ff;
+  line-height: .5rem;
+  text-align: center;
+  border-radius: 6px;
+  font-size: .15rem;
+  color: white;
+  position: absolute;
+  left: 50%;
+  margin-left: -45%;
+  bottom : .1rem;
+}
+//slide end.......................
+
+//newperson start...........................
+#newperson{
+  width: 100%;
+  height: 1.05rem;
+  background: url("../img/banner_bot_bg.jpg");
+  background-size: 100% 1.05rem;
+  margin-bottom: .08rem;
+}
+//newperson end...........................
+
+
+//lk_server start...........................
+#lk_server{
+  background: white;
+  margin-bottom: .08rem;
+  padding-left: .16rem;
+}
+#lk_server .lk_server_tit{
+  font-size: .12rem;
+  color: #87889a;
+  line-height: .35rem;
+  border-bottom: 2px solid #f6f6f6;
+}
+#lk_server .lk_server_con{
+  width: 100%;
+  height: 1.39rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#lk_server .lk_server_con .lk_server_list{
+  width: 1.4rem;
+  height: 1.39rem;
+  border-right: 1px solid #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#lk_server .lk_server_con .lk_server_list:nth-child(3n){
+  border: none;
+}
+#lk_server .lk_server_con .lk_server_list img{
+  width: .3rem ;
+  height: .3rem;
+}
+#lk_server .lk_server_con .lk_server_list h3{
+  font-size: .14rem;
+  color: #3e3e48;
+  line-height: .39rem;
+  font-weight: normal;
+}
+#lk_server .lk_server_con .lk_server_list p{
+  font-size: .12rem;
+  color: #777b87;
+  line-height: .16rem;
+}
+//lk_server end...........................
+
+
+
+//lk_tq start..................................
+#lk_tq{
+  padding: 0 .15rem;
+  height: 3.18rem;
+  background: white;
+  margin-bottom: .08rem;
+}
+#lk_tq .lk_tq_tit{
+  font-size: .12rem;
+  color: #87889a;
+  line-height: .35rem;
+  border-bottom: 2px solid #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lk_tq .lk_tq_flag_img{
+  width: 100%;
+  height: .95rem;
+  background: url("../img/lk_tq.png");
+  background-size: 100% .95rem;
+  border-bottom: 1px solid #f6f6f6;
+}
+#lk_tq .lk_tq_con{
+  width: 100%;
+}
+#lk_tq .lk_tq_con .lk_tq_list{
+  width: 1rem;
+  height: .932rem;
+  float: left;
+  margin-right: .42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#lk_tq .lk_tq_con .lk_tq_list:nth-child(3n){
+  margin-right: 0;
+}
+#lk_tq .lk_tq_con .lk_tq_list img{
+  width: .38rem;
+  height: .38rem;
+}
+#lk_tq .lk_tq_con .lk_tq_list p{
+  font-size: .12rem;
+  color: #4b484f;
+  line-height: .26rem;
+}
+//lk_tq end..................................
+
+
+
+//lk_jk start...............................
+#lk_jk{
+  padding-left: .16rem;
+  height: 1.72rem;
+  background: url("../img/lk_jk_bg.png");
+  background-size: 100% 1.72rem;
+}
+//lk_jk end...............................
+
+
+
+//footer start..................................
+footer{
+  width: 100%;
+  height: .51rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #e0e0e0;
+}
+footer .foot_list{
+  display: block;
+  width: .37rem;
+  height: .37rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .09rem;
+  color: #c4c5c7;
+}
+footer .foot_list i{
+  font-size: .21rem;
+  color: #848fa1;
+}
+footer #foot_on{
+  color: #3d9aff;
+}
+footer #foot_on i{
+  color: #3d9aff;
+}
+//footer end...............................
+
+
